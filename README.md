@@ -1,0 +1,1 @@
+# Splendor-Analytics--Trial-Activation-Challenge
