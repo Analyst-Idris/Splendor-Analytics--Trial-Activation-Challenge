@@ -2,7 +2,12 @@
 
 ## Problem Statement
 
-Splendor Analytics runs a 30-day free trial for its workforce management platform. ~1 in 5 trialists converts to a paying customer, but the product team cannot tell **who is on track, when to intervene, or which features actually matter**.
+At Splendor Analytics, we run a 30-day free trial for new organisations signing up to our workforce management platform. The platform covers everything from shift scheduling and time tracking to payroll approvals and team communications.
+The challenge is this: we do not know what a "good" trial looks like. Our product team can see that roughly 1 in 5 trialists eventually converts to a paying customer, but they cannot tell who is on track to convert, when to intervene, or which features actually matter to the decision. Without that clarity, every onboarding improvement is a guess.
+
+To fix this, we want to define what Trial Activation means for our product — a specific set of in-app behaviours that signal a trialist has genuinely experienced our core value. We then want to build the data infrastructure to track activation at scale, and run the analysis to understand whether our current trialists are reaching it.
+Your job is to do exactly that: dig into the raw behavioural data, find what matters, define the goals, and build the models.
+
 
 This solution:
 1. Cleans and explores the raw behavioural event data
@@ -66,7 +71,7 @@ splendor-trial-activation/
 ├── data/
 │   └── DA_task.csv            # Raw data (gitignored)
 ├── notebooks/
-│   ├── 01_eda_cleaning.py         # Task 1: Data cleaning & EDA (15 figures)
+│   ├── 01_eda_cleaning.ipynb         # Task 1: Data cleaning & EDA (15 figures)
 │   ├── 02_conversion_drivers.ipynb   # Task 2: Statistical tests, XGBoost+SHAP, segmentation
 │   └── 03_goals_and_metrics.ipynb    # Task 3: Goal definitions & product metrics
 ├── models/
